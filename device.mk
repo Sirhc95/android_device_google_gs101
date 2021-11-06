@@ -886,6 +886,16 @@ SUPPORT_NR := true
 # Using IRadio 1.6
 USE_RADIO_HAL_1_6 := true
 
+# HIDL Wrapper
+PRODUCT_PACKAGES += \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml
+
+# QTI Telephony Utils
+PRODUCT_PACKAGES += \
+    qti-telephony-utils \
+    qti_telephony_utils.xml
+
 #$(call inherit-product, vendor/google_devices/telephony/common/device-vendor.mk)
 #$(call inherit-product, vendor/google_devices/gs101/proprietary/device-vendor.mk)
 

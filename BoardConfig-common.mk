@@ -54,6 +54,9 @@ BOARD_KERNEL_CMDLINE += cma_sysfs.experimental=Y
 BOARD_KERNEL_CMDLINE += stack_depot_disable=off page_pinner=on
 BOARD_BOOTCONFIG += androidboot.boot_devices=14700000.ufs
 
+# Prebuilt kernel
+TARGET_PREBUILT_KERNEL := $(TARGET_KERNEL_DIR)/Image.lz4
+
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 ifeq (,$(TARGET_PREBUILT_KERNEL))

@@ -46,7 +46,10 @@ PRODUCT_SOONG_NAMESPACES += \
 	vendor/google/interfaces \
 	vendor/google_devices/common/proprietary/confirmatioui_hal \
 	vendor/google_nos/host/android \
-	vendor/google_nos/test/system-test-harness
+	vendor/google_nos/test/system-test-harness \
+	vendor/qcom/opensource/commonsys/system/bt/conf \
+	packages/apps/Bluetooth
+	
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/Image.lz4

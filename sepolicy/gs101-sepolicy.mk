@@ -43,3 +43,6 @@ PRODUCT_PUBLIC_SEPOLICY_DIRS += device/google/gs101/sepolicy/public
 
 # Google battery
 BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/googlebattery
+
+# Turbo Adapter
+BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/turbo_adapter

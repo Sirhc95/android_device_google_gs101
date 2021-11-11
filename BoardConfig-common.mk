@@ -54,6 +54,9 @@ BOARD_KERNEL_CMDLINE += cma_sysfs.experimental=Y
 BOARD_KERNEL_CMDLINE += stack_depot_disable=off page_pinner=on
 BOARD_BOOTCONFIG += androidboot.boot_devices=14700000.ufs
 
+# Force disable updating of APEXes when flatten APEX flag is enabled
+OVERRIDE_TARGET_FLATTEN_APEX := true
+
 # Prebuilt kernel
 TARGET_PREBUILT_KERNEL := $(TARGET_KERNEL_DIR)/Image.lz4
 
